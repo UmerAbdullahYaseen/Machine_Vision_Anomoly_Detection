@@ -1,4 +1,9 @@
 ## 🚀 Requirements
+## Python Dependencies
+
+The project requires the following Python packages:
+
+```bash
 torch>=2.0
 torchvision>=0.15
 pillow>=9.0
@@ -7,8 +12,7 @@ pandas>=1.5
 matplotlib>=3.6
 scikit-learn>=1.2
 scipy>=1.10
-
-
+```
 ## 🚀 How to Run
 
 ### 1. Install Dependencies
@@ -54,5 +58,6 @@ python src/evaluate_features.py
 # Generate qualitative visualizations
 python src/visualize_features.py
 ```
+
 
 ---
