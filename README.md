@@ -278,13 +278,16 @@ Visualization panels are saved to `results/visualizations/` and show:
 
 <!-- Replace the filenames below with your actual saved visualization files -->
 **Example 1**
-![Feature Method Example 1](results/visualizations/your_image_name_1.png)
+![Feature Method Example 1](results/visualizations/02_color_002.png)
 
 **Example 2**
-![Feature Method Example 2](results/visualizations/your_image_name_2.png)
+![Feature Method Example 2](results/visualizations/03_color_003.png)
 
 **Example 3**
-![Feature Method Example 3](results/visualizations/your_image_name_3.png)
+![Feature Method Example 3](results/visualizations/04_color_004.png)
+
+**Example 4**
+![Feature Method Example 4](results/visualizations/07_color_007.png)
 
 ---
 
