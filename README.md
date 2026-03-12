@@ -422,3 +422,37 @@ This implementation was intentionally kept **clear and explainable** rather than
 - Transparent experimentation
 
 > That design choice matches the spirit of the assignment: not only to build something that works, but to fully understand and justify it.
+> 
+
+## Dataset Attribution and License
+
+This project uses the **MVTec Anomaly Detection (MVTec AD)** dataset, specifically the **carpet** category.
+
+If you use the dataset in scientific work, please cite:
+
+> Paul Bergmann, Michael Fauser, David Sattlegger, and Carsten Steger,  
+> "A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection",  
+> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
+
+### Dataset License
+Copyright 2019 MVTec Software GmbH
+
+The dataset is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+
+For commercial use of the dataset, please contact MVTec Software GmbH.
+
+### Notes
+- The dataset license applies to the dataset files, not automatically to the code in this repository.
+- Users of this repository are responsible for complying with the original dataset license terms.
+
+
+## AI Assistance
+
+This project was developed with the help of AI-assisted tools, including ChatGPT, for support in:
+
+- brainstorming solution approaches,
+- drafting and refining code structure,
+- debugging implementation issues,
+- and improving documentation clarity.
+
+All final design decisions, implementation choices, experiments, evaluation, and interpretation of results were reviewed, executed, and understood by me. I take full responsibility for the submitted solution and its contents.
