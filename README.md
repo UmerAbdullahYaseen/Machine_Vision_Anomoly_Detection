@@ -1,7 +1,7 @@
 # 🧵 Anomaly Detection in Textured Industrial Surfaces
 ### MVTec AD – Carpet Category
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python) ![PyTorch](https://img.shields.io/badge/PyTorch-ResNet18-orange?logo=pytorch) ![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python) ![PyTorch](https://img.shields.io/badge/PyTorch-ResNet18-orange?logo=pytorch) [![Dataset License](https://img.shields.io/badge/dataset%20license-CC%20BY--NC--SA%204.0-blue)](DATASET_LICENSE.md)
 
 ---
 
