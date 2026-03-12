@@ -17,7 +17,7 @@ def evaluate_features():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device:", device)
 
-    memory_bank = torch.load(MEMORY_PATH, map_location=device).to(device)  # [M, C]
+    memory_bank = torch.load(MEMORY_PATH, map_location=device).to(device)  
 
     test_dataset = MVTecCarpetDataset(DATA_ROOT, split="test", image_size=256)
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=0)
@@ -41,11 +41,11 @@ def evaluate_features():
             feats = torch.cat([f1, f2_up], dim=1)   # [1, C, H, W]
 
             Hf, Wf = feats.shape[-2:]
-            patch_feats = feats.permute(0, 2, 3, 1).reshape(-1, feats.shape[1])  # [N, C]
+            patch_feats = feats.permute(0, 2, 3, 1).reshape(-1, feats.shape[1]) 
 
             # distance to nearest normal patch in memory bank
-            dists = torch.cdist(patch_feats, memory_bank)   # [N, M]
-            min_dists = dists.min(dim=1)[0]                 # [N]
+            dists = torch.cdist(patch_feats, memory_bank)   
+            min_dists = dists.min(dim=1)[0]           
 
             anomaly_map = min_dists.reshape(1, 1, Hf, Wf)
             anomaly_map = F.interpolate(anomaly_map, size=(256, 256), mode="bilinear", align_corners=False)

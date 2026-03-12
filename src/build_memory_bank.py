@@ -36,12 +36,11 @@ def build_memory_bank():
             feats = torch.cat([f1, f2_up], dim=1)   # [B, C, H, W]
 
             # reshape to patch vectors
-            feats = feats.permute(0, 2, 3, 1).reshape(-1, feats.shape[1])  # [N_patches, C]
+            feats = feats.permute(0, 2, 3, 1).reshape(-1, feats.shape[1])
             memory_features.append(feats.cpu())
 
     memory_bank = torch.cat(memory_features, dim=0)
 
-    # optional: reduce size by random sampling for speed
     max_features = 10000
     if memory_bank.shape[0] > max_features:
         idx = torch.randperm(memory_bank.shape[0])[:max_features]
